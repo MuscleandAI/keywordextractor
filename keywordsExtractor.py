@@ -48,7 +48,7 @@ if __name__ == "__main__":
     keys = keyword_extractor.predict("我想知道天然气领域的k206输油泵机组电机风道清灰流程", 3)[0]
     str = ''.join(keys)
     print(str)
-    input = '404|如在防爆区域用可燃气体检测仪检测无报警，作业现场安全；确认高压室检修泵电机柜处于检修状态：断路器拉至检修位置，合接地刀；电伴热系统断电，均悬挂“禁止合闸、有人工作”标识牌。405|已告知相关的交叉作业负责人。|406|检查个人防护用品齐全、工作所需材料、工具齐全。'
+    input = '断路器拉至检修位置，合接地刀；电伴热系统断电，均悬挂“禁止合闸、有人工作”标识牌。'
     key2 = keyword_extractor.predict(input.strip().strip('\n'),3)[0]
     str2 = ''.join(set(key2))
     print(str2)
